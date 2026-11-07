@@ -1,0 +1,6 @@
+name: astrbot_plugin_slang_miner
+display_name: 群友黑话挖掘者
+version: 1.0.0
+desc: 群友黑话潜伏挖掘者 —— 无感旁路收集群聊消息，异步萃取群内专属黑称与黑话梗，自动构建置信度词库并在命中时上下文静默注入。
+author: 唯笑 & keyou
+repo: ""

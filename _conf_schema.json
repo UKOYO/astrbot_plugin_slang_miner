@@ -1,0 +1,38 @@
+{
+  "enabled": {
+    "description": "是否启用黑话潜伏挖掘器",
+    "type": "bool",
+    "value": true,
+    "default": true
+  },
+  "analysis_provider_id": {
+    "description": "专属分析模型提供商 ID（可填免费模型ID，留空则默认使用当前主模型）",
+    "type": "string",
+    "value": "",
+    "hint": "填 AstrBot 服务提供商配置里的 ID（例如：免费鸡蛋、星渊DS等），留空则使用当前对话的主模型",
+    "default": ""
+  },
+  "target_groups": {
+    "description": "监听的群号列表（留空表示监听所有群聊）",
+    "type": "list",
+    "value": []
+  },
+  "buffer_size": {
+    "description": "触发萃取的单群消息积攒阈值",
+    "type": "int",
+    "value": 40,
+    "default": 40
+  },
+  "min_confidence_to_inject": {
+    "description": "转正/允许注入对话上下文的最低置信度（出现频次门槛）",
+    "type": "int",
+    "value": 3,
+    "default": 3
+  },
+  "auto_inject": {
+    "description": "是否在群聊中命中已知黑话时自动将释义注入上下文",
+    "type": "bool",
+    "value": true,
+    "default": true
+  }
+}
